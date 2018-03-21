@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PROPINA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administradora.devpoliapp.propina">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:text="PROPINA"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText1"
+        app:layout_constraintEnd_toEndOf="@+id/editText1"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="1dp"
+        android:text="Malo"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="201dp"
+        android:text="Bueno"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonpropina"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton1" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="84dp"
+        android:text="Excelente"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <Button
+        android:id="@+id/buttonpropina"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Calcular Propina"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="number"
+        android:text="Valor de los productos"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonpropina" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Texto"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
+        tools:text="La propina se calcula basada en los siguientes valores: *Malo: 5% del valor de los productos                      *Bueno: 10% del valor de los productos                                *Excelente 15% del valor de los productos" />
+
+</android.support.constraint.ConstraintLayout>
